@@ -4,14 +4,24 @@
     <title>Microsoft Windows Settings</title>
     <meta charset="utf-8"/>
     <style>
-        * { font-family: sans-serif;    }
-        p { margin: 0; margin-top: 0.6em; }
+        * { font-family: sans-serif; }
+        * { margin: 0; padding: 0; }
+        html, body, main { height: 100%; }
+        body {
+            display: flex;
+            flex-flow: column;
+        }
+        main {
+          padding: 1em;
+          flex: auto;
+          overflow: auto;
+        }
+        footer { font-size: 90%; background-color: lightGray; border-top: gray solid thin; padding: 0.2em; padding-left: 1em; padding-right: 1em; }
         details > p, details > details { margin: 0; margin-left: 3em; }
         body > details { margin-top: 0.4em; margin-left: 2em; }
         hr { margin-top: 1em; margin-bottom: 1em; }
         h1 { font-size: 110%; }
         .hidden { display: none; }
-        body { display: table-row; width: 100%; }
         section { display: table-cell; padding-left: 4em; }
         input[type=text] { padding-left: 0.4em; padding-right: 0.4em; background-color: beige; border: solid thin saddlebrown; }
         #not-found { display: none; }
@@ -20,6 +30,7 @@
 
 <body>
 
+    <main>
     <section>
         <h1>Favourite Settings</h1>
 
@@ -346,6 +357,9 @@
         <p><a href="ms-screensketch:">Screen Sketch</a></p>
 
     </section>
+    </main>
+
+    <footer>Copyright &copy; S A Kryukov, 2020</footer>
 
 <script>
     "use strict";
