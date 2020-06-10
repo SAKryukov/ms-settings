@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Microsoft Windows Settings</title>
+    <meta charset="utf-8"/>
+    <style>
+        * { font-family: sans-serif;    }
+        p { margin: 0; margin-top: 0.6em; }
+        details > p, details > details { margin: 0; margin-left: 3em; }
+        body > details { margin-top: 0.4em; margin-left: 2em; }
+        hr { margin-top: 1em; margin-bottom: 1em; }
+        h1 { font-size: 110%; }
+        .hidden { display: none; }
+        body { display: table-row; width: 100%; }
+        section { display: table-cell; padding-left: 4em; }
+        input[type=text] { padding-left: 0.4em; padding-right: 0.4em; background-color: beige; border: solid thin saddlebrown; }
+        #not-found { display: none; }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>Favourite Settings</h1>
+
+        <details open="true">
+            <summary>Favourites</summary>
+            <p>
+                <a href="ms-settings:display">Display</a><br />
+                <a href="ms-settings:nightlight">Display &mdash; Night light settings</a><br />
+                <a href="ms-settings:sound">Sound</a><br />
+                <a href="ms-settings:clipboard">Clipboard</a><br />
+                <a href="ms-settings:pen">Pen & Windows Ink</a><br />
+                <a href="ms-settings:windowsupdate">Windows Update</a><br />
+            </p>
+        </details>
+    </section>
+    <section>
+
+        <h1>All Settings</h1>
+
+        <p><a href="ms-settings:">Settings Application</a></p>
+        <p><label for="search" accesskey="S" title="Enter: search; Escape: clear search results and collapse tree view"><u>S</u>earch: <input type="text" id="search"/><label></p>
+        <p id="not-found">Not found</p>
+
+        <hr/>
+
+        <details>
+            <summary>Accounts</summary>
+            <p><a href="ms-settings:workplace">Access work or school</a></p>
+            <p><a href="ms-settings:emailandaccounts">Email & app accounts</a></p>
+            <p><a href="ms-settings:otherusers">Family & other people</a></p>
+            <p><a href="ms-settings:assignedaccess">Set up a kiosk</a></p>
+            <p><a href="ms-settings:signinoptions">Sign-in options</a></p>
+            <p><a href="ms-settings:signinoptions-dynamiclock">Sign-in options, dynamic lock</a></p>
+            <p><a href="ms-settings:sync">Sync your settings</a></p>
+            <p><a href="ms-settings:signinoptions-launchfaceenrollment">Windows Hello setup</a></p>
+            <p><a href="ms-settings:signinoptions-launchfingerprintenrollment">Sign-in options, fingerprint
+                    enrollment</a>
+            </p>
+            <p><a href="ms-settings:yourinfo">Your info</a></p>
+        </details>
+
+        <details>
+            <summary>Apps</summary>
+            <p><a href="ms-settings:appsfeatures">Apps & Features</a></p>
+            <p><a href="ms-settings:appsfeatures-app">App features (Reset, manage add-on & downloadable content, etc.
+                    for the app)</a></p>
+            <p><a href="ms-settings:appsforwebsites">Apps for websites</a></p>
+            <p><a href="ms-settings:defaultapps">Default apps</a></p>
+            <p><a href="ms-settings:optionalfeatures">Manage optional features</a></p>
+            <p><a href="ms-settings:maps">Offline Maps</a></p>
+            <p><a href="ms-settings:maps-downloadmaps">Download maps</a></p>
+            <p><a href="ms-settings:startupapps">Startup apps</a></p>
+            <p><a href="ms-settings:videoplayback">Video playback</a></p>
+        </details>
+
+        <details>
+            <summary>Cortana</summary>
+            <p>Note:<br />This Settings section on desktop will be called Search<br />when the PC is set to regions
+                where Cortana is
+                not currently available or Cortana has been disabled.<br />Cortana-specific pages<br />(Cortana across
+                my devices, and
+                Talk to Cortana) will not be listed in this case.</p>
+            <p><a href="ms-settings:cortana-notifications">Cortana across my devices</a></p>
+            <p><a href="ms-settings:cortana-moredetails">More details</a></p>
+            <p><a href="ms-settings:cortana-permissions">Permissions & History</a></p>
+            <p><a href="ms-settings:cortana-windowssearch">Searching Windows</a></p>
+            <p><a href="ms-settings:cortana-language">Cortana Language</a></p>
+            <p><a href="ms-settings:cortana">Cortana</a></p>
+            <p><a href="ms-settings:cortana-talktocortana">Talk to Cortana</a></p>
+        </details>
+
+        <details>
+            <summary>Devices</summary>
+            <p><a href="ms-settings:autoplay">AutoPlay</a></p>
+            <p><a href="ms-settings:bluetooth">Bluetooth</a></p>
+            <p><a href="ms-settings:connecteddevices">Connected Devices</a></p>
+            <p class="hidden"><a href="ms-settings:camera">Default camera (Deprecated in Windows 10, version 1809 and later)</a></p>
+            <p><a href="ms-settings:mousetouchpad">Mouse & touchpad</a></p>
+            <p><a href="ms-settings:pen">Pen & Windows Ink</a></p>
+            <p><a href="ms-settings:printers">Printers & scanners</a></p>
+            <p><a href="ms-settings:devices-touchpad">Touchpad</a></p>
+            <p><a href="ms-settings:typing">Typing</a></p>
+            <p><a href="ms-settings:usb">USB</a></p>
+            <p><a href="ms-settings:wheel">Wheel (if Dial is paired)</a></p>
+            <p><a href="ms-settings:mobile-devices">Your phone</a></p>
+            <details>
+                <summary>Phone</summary>
+                <p><a href="ms-settings:mobile-devices">Your phone</a></p>
+                <p><a href="ms-settings:mobile-devices-addphone">Add phone</a></p>
+                <p><a href="ms-settings:mobile-devices-addphone-direct">Add phone direct</a></p>
+            </details>
+        </details>
+
+        <details>
+            <summary>Ease of Access</summary>
+            <p><a href="ms-settings:easeofaccess-audio">Audio</a></p>
+            <p><a href="ms-settings:easeofaccess-closedcaptioning">Closed captions</a></p>
+            <p><a href="ms-settings:easeofaccess-colorfilter">Color filters</a></p>
+            <p><a href="ms-settings:easeofaccess-cursorandpointersize">Cursor & pointer size</a></p>
+            <p><a href="ms-settings:easeofaccess-display">Display</a></p>
+            <p><a href="ms-settings:easeofaccess-eyecontrol">Eye control</a></p>
+            <p><a href="ms-settings:fonts">Fonts</a></p>
+            <p><a href="ms-settings:easeofaccess-highcontrast">High contrast</a></p>
+            <p><a href="ms-settings:easeofaccess-keyboard">Keyboard</a></p>
+            <p><a href="ms-settings:easeofaccess-magnifier">Magnifier</a></p>
+            <p><a href="ms-settings:easeofaccess-mouse">Mouse</a></p>
+            <p><a href="ms-settings:easeofaccess-narrator">Narrator</a></p>
+            <p class="hidden"><a href="ms-settings:easeofaccess-otheroptions">Other options (deprecated in Windows 10, version 1809 and later</a></p>
+            <p><a href="ms-settings:easeofaccess-speechrecognition">Speech</a></p>
+        </details>
+
+        <details class="hidden">
+            <summary>Extras</summary>
+            <p><a href="ms-settings:extras (only available if " settings apps" are installed, for example, by a 3rd
+                    party)">Extras</a></p>
+        </details>
+
+        <details class="hidden">
+            <summary>Gaming</summary>
+            <p><a href="ms-settings:gaming-broadcasting">Broadcasting</a></p>
+            <p><a href="ms-settings:gaming-gamebar">Game bar</a></p>
+            <p><a href="ms-settings:gaming-gamedvr">Game DVR</a></p>
+            <p><a href="ms-settings:gaming-gamemode">Game Mode</a></p>
+            <p><a href="ms-settings:quietmomentsgame">Playing a game full screen</a></p>
+            <p><a href="ms-settings:gaming-trueplay (Deprecated in Windows 10, version 1809 and later)">TruePlay</a></p>
+            <p><a href="ms-settings:gaming-xboxnetworking">Xbox Networking</a></p>
+        </details>
+
+        <details class="hidden">
+            <summary>Mixed reality</summary>
+            <p>Note: These settings are only available if the Mixed Reality Portal app is installed.</p>
+            <p><a href="ms-settings:holographic-audio">Audio and speech</a></p>
+            <p><a href="ms-settings:privacy-holographic-environment">Environment</a></p>
+            <p><a href="ms-settings:holographic-headset">Headset display</a></p>
+            <p><a href="ms-settings:holographic-management">Uninstall</a></p>
+        </details>
+
+        <details>
+            <summary>Network & internet</summary>
+            <p><a href="ms-settings:network-airplanemodettings:proximity">Airplane mode</a></p>
+            <p><a href="ms-settings:network-cellular">Cellular & SIM</a></p>
+            <p><a href="ms-settings:datausage">Data usage</a></p>
+            <p><a href="ms-settings:network-dialup">Dial-up</a></p>
+            <p><a href="ms-settings:network-directaccess (only available if DirectAccess is enabled)">DirectAccess</a>
+            </p>
+            <p><a href="ms-settings:network-ethernet">Ethernet</a></p>
+            <p><a href="ms-settings:network-wifisettings">Manage known networks</a></p>
+            <p><a href="ms-settings:network-mobilehotspot">Mobile hotspot</a></p>
+            <p><a href="ms-settings:nfctransactions">NFC</a></p>
+            <p><a href="ms-settings:network-proxy">Proxy</a></p>
+            <p><a href="ms-settings:network-status">Network status</a></p>
+            <p><a href="ms-settings:network">Network</a></p>
+            <p><a href="ms-settings:network-vpn">VPN</a></p>
+            <p><a href="ms-settings:network-wifi (only available if the device has a wifi adapter)">Wi-Fi</a></p>
+            <p><a href="ms-settings:network-wificalling (only available if Wi-Fi calling is enabled)">Wi-Fi Calling</a>
+            </p>
+        </details>
+
+        <details>
+            <summary>Personalization</summary>
+            <p><a href="ms-settings:personalization-background">Background</a></p>
+            <p><a href="ms-settings:personalization-start-places">Choose which folders appear on Start</a></p>
+            <p><a href="ms-settings:colors">Colors</a></p>
+            <p class="hidden"><a href="ms-settings:personalization-glance">Glance (Deprecated in Windows 10, version 1809 and
+                    later)</a>
+            </p>
+            <p><a href="ms-settings:lockscreen">Lock screen</a></p>
+            <p class="hidden"><a href="ms-settings:personalization-navbar">Navigation bar (Deprecated in Windows 10, version 1809 and
+                    later)</a></p>
+            <p><a href="ms-settings:personalization">Personalization (category)</a></p>
+            <p><a href="ms-settings:personalization-start">Start</a></p>
+            <p><a href="ms-settings:taskbar">Taskbar</a></p>
+            <p><a href="ms-settings:themes">Themes</a></p>
+        </details>
+
+        <details>
+            <summary>Privacy</summary>
+            <p><a href="ms-settings:privacy-accessoryapps (Deprecated in Windows 10, version 1809 and later)">Accessory
+                    apps</a></p>
+            <p><a href="ms-settings:privacy-accountinfo">Account info</a></p>
+            <p><a href="ms-settings:privacy-activityhistory">Activity history</a></p>
+            <p><a href="ms-settings:privacy-advertisingid (Deprecated in Windows 10, version 1809 and later)">Advertising
+                    ID</a></p>
+            <p><a href="ms-settings:privacy-appdiagnostics">App diagnostics</a></p>
+            <p><a href="ms-settings:privacy-automaticfiledownloads">Automatic file downloads</a></p>
+            <p><a href="ms-settings:privacy-backgroundapps">Background Apps</a></p>
+            <p><a href="ms-settings:privacy-calendar">Calendar</a></p>
+            <p><a href="ms-settings:privacy-callhistory">Call history</a></p>
+            <p><a href="ms-settings:privacy-webcam">Camera</a></p>
+            <p><a href="ms-settings:privacy-contacts">Contacts</a></p>
+            <p><a href="ms-settings:privacy-documents">Documents</a></p>
+            <p><a href="ms-settings:privacy-email">Email</a></p>
+            <p><a href="ms-settings:privacy-eyetracker (requires eyetracker hardware)">Eye tracker</a></p>
+            <p><a href="ms-settings:privacy-feedback">Feedback & diagnostics</a></p>
+            <p><a href="ms-settings:privacy-broadfilesystemaccess">File system</a></p>
+            <p><a href="ms-settings:privacy-general">General</a></p>
+            <p><a href="ms-settings:privacy-location">Location</a></p>
+            <p><a href="ms-settings:privacy-messaging">Messaging</a></p>
+            <p><a href="ms-settings:privacy-microphone">Microphone</a></p>
+            <p><a href="ms-settings:privacy-motion">Motion</a></p>
+            <p><a href="ms-settings:privacy-notifications">Notifications</a></p>
+            <p><a href="ms-settings:privacy-customdevices">Other devices</a></p>
+            <p><a href="ms-settings:privacy-pictures">Pictures</a></p>
+            <p><a href="ms-settings:privacy-phonecalls">Phone calls</a></p>
+            <p><a href="ms-settings:privacy-radios">Radios</a></p>
+            <p><a href="ms-settings:privacy-speechtyping">Speech, inking & typing</a></p>
+            <p><a href="ms-settings:privacy-tasks">Tasks</a></p>
+            <p><a href="ms-settings:privacy-videos">Videos</a></p>
+            <p><a href="ms-settings:privacy-voiceactivation">Voice activation</a></p>
+        </details>
+
+        <details class="hidden">
+            <summary>Surface Hub</summary>
+            <p><a href="ms-settings:surfacehub-accounts">Accounts</a></p>
+            <p><a href="ms-settings:surfacehub-sessioncleanup">Session cleanup</a></p>
+            <p><a href="ms-settings:surfacehub-calling">Team conferencing</a></p>
+            <p><a href="ms-settings:surfacehub-devicemanagenent">Team device management</a></p>
+            <p><a href="ms-settings:surfacehub-welcome">Welcome screen</a></p>
+        </details>
+
+        <details>
+            <summary>System</summary>
+            <p><a href="ms-settings:about">About</a></p>
+            <p><a href="ms-settings:display-advanced (only available on devices that support advanced display options)">Advanced
+                    display settings</a></p>
+            <p><a href="ms-settings:apps-volume (Added in Windows 10, version 1903)">App volume and device
+                    preferences</a>
+            </p>
+            <p><a href="ms-settings:batterysaver (only available on devices that have a battery, such as a tablet)">Battery
+                    Saver</a></p>
+            <p><a
+                    href="ms-settings:batterysaver-settings (only available on devices that have a battery, such as a tablet)">Battery
+                    Saver settings</a></p>
+            <p><a
+                    href="ms-settings:batterysaver-usagedetails (only available on devices that have a battery, such as a tablet)">Battery
+                    use</a></p>
+            <p><a href="ms-settings:clipboard">Clipboard</a></p>
+            <p><a href="ms-settings:display">Display</a></p>
+            <p><a href="ms-settings:savelocations">Default Save Locations</a></p>
+            <p><a href="ms-settings:screenrotation">Display</a></p>
+            <p><a href="ms-settings:quietmomentspresentation">Duplicating my display</a></p>
+            <p><a href="ms-settings:quietmomentsscheduled">During these hours</a></p>
+            <p><a href="ms-settings:deviceencryption">Encryption</a></p>
+            <p><a href="ms-settings:quiethours">Focus assist</a></p>
+            <p><a href="ms-settings:quietmomentshome">Quiet moments, home</a></p>
+            <p><a href="ms-settings:display-advancedgraphics">Graphics Settings</a></p>
+            <p><a href="ms-settings:messaging">Messaging</a></p>
+            <p><a href="ms-settings:multitasking">Multitasking</a></p>
+            <p><a href="ms-settings:nightlight">Night light settings</a></p>
+            <p><a href="ms-settings:phone-defaultapps">Phone</a></p>
+            <p><a href="ms-settings:project">Projecting to this PC</a></p>
+            <p><a href="ms-settings:crossdevice">Shared experiences</a></p>
+            <p><a href="ms-settings:tabletmode">Tablet mode</a></p>
+            <p><a href="ms-settings:taskbar">Taskbar</a></p>
+            <p><a href="ms-settings:notifications">Notifications & actions</a></p>
+            <p><a href="ms-settings:remotedesktop">Remote Desktop</a></p>
+            <p class="hidden"><a href="ms-settings:phone (Deprecated in Windows 10, version 1809 and later)">Phone</a></p>
+            <p><a href="ms-settings:powersleep">Power & sleep</a></p>
+            <p><a href="ms-settings:sound">Sound</a></p>
+            <p><a href="ms-settings:storagesense">Storage</a></p>
+            <p><a href="ms-settings:storagepolicies">Storage Sense</a></p>
+        </details>
+
+        <details>
+            <summary>Time and language</summary>
+            <p><a href="ms-settings:dateandtime">Date & time</a></p>
+            <p><a href="ms-settings:keyboard">Language, keyboard</a></p>
+            <p><a href="ms-settings:regionlanguage">Region language</a></p>
+            <p><a href="ms-settings:regionlanguage-bpmfime"></a></p>
+            <p><a href="ms-settings:regionlanguage-cangjieime"></a></p>
+            <p><a href="ms-settings:regionlanguage-chsime-pinyin-domainlexicon"></a></p>
+            <p><a href="ms-settings:regionlanguage-chsime-pinyin-keyconfig"></a></p>
+            <p><a href="ms-settings:regionlanguage-chsime-pinyin-udp"></a></p>
+            <p><a href="ms-settings:regionlanguage-chsime-wubi-udp"></a></p>
+            <p><a href="ms-settings:regionlanguage-quickime"></a></p>
+            <p><a href="ms-settings:speech">Speech</a></p>
+            <details><summary>Input method, conditionally available</summary>
+                <p><a href="ms-settings:regionlanguage-jpnime">Japan IME settings</a></p>
+                <p><a href="ms-settings:regionlanguage-chsime-pinyin">Pinyin IME settings</a></p>
+                <p><a href="ms-settings:regionlanguage-chsime-wubi">Wubi IME settings</a></p>
+            </details>
+        </details>
+
+        <details>
+            <summary>Update & security</summary>
+            <p><a href="ms-settings:activation">Activation</a></p>
+            <p><a href="ms-settings:backup">Backup</a></p>
+            <p><a href="ms-settings:delivery-optimization">Delivery Optimization</a></p>
+            <p><a href="ms-settings:findmydevice">Find My Device</a></p>
+            <p><a href="ms-settings:developers">For developers</a></p>
+            <p><a href="ms-settings:recovery">Recovery</a></p>
+            <p><a href="ms-settings:troubleshoot">Troubleshoot</a></p>
+            <p><a href="ms-settings:windowsdefender">Windows Security</a></p>
+            <p><a href="ms-settings:windowsinsider">Windows Insider Program</a></p>
+            <p><a href="ms-settings:windowsinsider-optin">Windows Insider, opt-in</a></p>
+            <p><a href="ms-settings:windowsupdate">Windows Update</a></p>
+            <p><a href="ms-settings:windowsupdate-action">Windows Update, action</a></p>
+            <p><a href="ms-settings:windowsupdate-options">Windows Update, Advanced options</a></p>
+            <p><a href="ms-settings:windowsupdate-restartoptions">Windows Update, Restart options</a></p>
+            <p><a href="ms-settings:windowsupdate-history">Windows Update, View update history</a></p>
+        </details>
+
+        <details class="hidden">
+            <summary>User Accounts</summary>
+            <p><a href="ms-settings:display-advancedgraphics ms-settings:workplace-provisioning">Provisioning</a></p>
+            <p><a href="ms-settings:provisioning">Provisioning (only available on mobile and if the enterprise has
+                    deployed
+                    a provisioning package)</a></p>
+            <p><a href="ms-settings:windowsanywhere">Windows Anywhere (device must be Windows Anywhere-capable)</a></p>
+        </details>
+
+    </section>
+    <section>
+        
+	<h1>Applications</h1>
+        <p><a href="msnweather:">Weather</a></p>
+        <p><a href="ms-chat:">Chat</a></p>
+        <p><a href="ms-windows-store:">Windows Store</a></p>
+        <p><a href="bingmaps:">Bing Maps</a></p>
+        <p class="hidden"><a href="ms-drive-to:">Bing Maps, drive to</a></p>
+        <p class="hidden"><a href="ms-walk-to:">Bing Maps, walk to</a></p>
+        <p class="hidden"><a href="bingmaps:?query">Bing Maps, query</a></p>
+        <p><a href="ms-screenclip:?delayInSeconds=1">Screen Clip</a>, 1-second delay</p>
+        <p><a href="ms-screensketch:">Screen Sketch</a></p>
+
+    </section>
+
+<script>
+    "use strict";
+
+    const search = document.getElementById("search");
+    const anchors = document.querySelectorAll("body > section:nth-child(2) a"); 
+    const detailElements = document.querySelectorAll("body > section:nth-child(2) details"); 
+    const notFoundIndicator = document.getElementById("not-found");
+    const toggleNotFoundIndicator = show => { if (show) notFoundIndicator.style.display = "block"; else notFoundIndicator.style.display = "none"; };
+    const setFoundStyle = (element, found) => { if (found) element.style.backgroundColor = "yellow"; else element.style.cssTest = element.style.backgroundColor = "transparent"; };
+    const clearFoundStyle = () => { for (let anchor of anchors) setFoundStyle(anchor, false); };
+    search.onblur = ev => { toggleNotFoundIndicator(false); };
+    window.onkeydown = ev => {
+        if (ev.key != "Escape") return;
+        toggleNotFoundIndicator(false);
+        search.scrollIntoView();
+        search.focus();
+        for (let detailElement of detailElements)
+            detailElement.open = false;
+            clearFoundStyle();
+        ev.preventDefault();
+    }; //window.onkeydown
+    search.onkeydown = ev => {
+        if (ev.key != "Enter") return;
+        toggleNotFoundIndicator(false);
+        clearFoundStyle();
+        const searchString = search.value.toLowerCase();
+        if (searchString.length < 1) return;
+        let found = false;
+        for (let anchor of anchors)
+            if (anchor.textContent.toLowerCase().includes(searchString)) {
+                let parent = anchor.parentElement;
+                while (parent.constructor != HTMLDetailsElement)
+                    parent = parent.parentElement;
+                parent.open = true;
+                setFoundStyle(anchor, true);
+                anchor.focus();
+                anchor.scrollIntoView();
+                found = true;
+            } //if
+            if (!found) toggleNotFoundIndicator(true);
+        ev.preventDefault();
+    }; //search.onkeydown
+    search.focus();
+</script>
+
+</body>
+</html>
